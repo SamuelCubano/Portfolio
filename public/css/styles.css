@@ -73,7 +73,7 @@ html{
   .five {
     grid-column: 1 / 23;
     grid-row: 21 / 32;
-    background-color: #7d7779;
+    background-color: #151414;
   }
 
   .six {
@@ -105,7 +105,7 @@ html{
   .nine {
     grid-column: 1 / 23;
     grid-row: 32/ 45 ;
-    background-color: #7d7779;
+    background-color: #151414;
     background-size: cover;
   }
 
@@ -151,15 +151,14 @@ html{
 
   .fourteen {
     grid-column: 1 / 23;
-    grid-row: 48 / 66 ;
-    background-color: red;
-    background-size: cover;
+    grid-row: 48 / 80 ;
+    background-image: url(../images/fondo.jpg);
   }
 
   .fiveteen {
     grid-column: 1 / 23;
-    grid-row: 41 / 59;
-    background-image: url(../images/Diseño\ sin\ título\ \(3\)-Photoroom.png);
+    grid-row: 45 / 60;
+    background-image: url(../images/Diseño\ sin\ título\ \(2\)-Photoroom\ -\ copia.png);
     background-size: cover;
   }
 
@@ -339,3 +338,33 @@ button {
   text-align: center;
   padding-top: 20px;
 }
+
+
+  .sixteen {
+    grid-column: 7 / 17;
+    grid-row: 60 / 62 ;
+    background-color: #fafafa04;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+  }
+
+  .seventeen {
+    grid-column: 2 / 8;
+    grid-row: 63 / 70 ;
+    background: rgba(0, 128, 0, 0.226);
+    background-size: cover;
+  }
+
+  .eighteen {
+    grid-column: 9 / 15;
+    grid-row: 63 / 70 ;
+    background: rgba(255, 0, 0, 0.267);
+    background-size: cover;
+  }
+
+  .nineteen {
+    grid-column: 16 / 22;
+    grid-row: 63 / 70 ;
+    background: rgba(55, 0, 255, 0.288);
+    background-size: cover;
+  }
