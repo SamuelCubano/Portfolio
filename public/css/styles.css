@@ -12,7 +12,7 @@ html{
   .wrapper {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(22, 1fr);
     grid-auto-rows: minmax(50px, auto);
   }
   
@@ -24,15 +24,13 @@ html{
   }*/
   .cero {
     
-    grid-column: 1 / 11 ;
+    grid-column: 1 / 23 ;
     grid-row: 1;
     background-color: #000000;
   }
   .one {
-    grid-column: 1 / 11;
+    grid-column: 1 / 23;
     grid-row: 1;
-      grid-column: 1 / 11;
-      grid-row: 1;
       position: -webkit-sticky;
       position: sticky;
       top: 0;
@@ -44,14 +42,14 @@ html{
     
   
   .two {
-    grid-column: 1 / 11;
-    grid-row: 2 / 17;
-    background: linear-gradient(rgba(0, 0, 0, 0.22), rgb(0, 0, 0)), url(/src/images/sleek-black-cool-computer-keyboard-rw8hd3o6xuqcynlx.webp);
+    grid-column: 1 / 23;
+    grid-row: 1 / 20;
+    background: url(../images/fondo33.gif);
     background-size: cover;
   }
   
   .three {
-    grid-column: 2 /5;
+    grid-column: 2 /10;
     grid-row: 6 / 12;
     font-size: 30px;
     background-color: #fafafa10;
@@ -66,22 +64,22 @@ html{
   }
   
   .four {
-    grid-column: 1 / 11;
-    grid-row:  15 / 17;
-    background-color: #fafafa10;
-    backdrop-filter: blur(0.4rem);
-    -webkit-backdrop-filter: blur(0.4rem);
+    grid-column: 1 / 23;
+    grid-row:  10 / 21;
+    background: url(../images/Diseño\ sin\ título\ \(2\)-Photoroom.png);
+    background-size: cover;
   }
+
   .five {
-    grid-column: 1 / 11;
-    grid-row: 17 / 35 ;
-    background: linear-gradient( rgba(0, 0, 0, 0.763),rgba(76, 112, 180, 0.103)), url(/src/images/fondo.jpg);
+    grid-column: 1 / 23;
+    grid-row: 21 / 32;
+    background-color: #7d7779;
   }
 
   .six {
-    grid-column: 2 / 5;
+    grid-column: 2 /  12;
     grid-row: 22  / 29 ;
-    background-color: #fafafa10;
+    background-color: #8B8589;
     backdrop-filter: blur(0.4rem);
     -webkit-backdrop-filter: blur(0.4rem);
     padding: 20px;
@@ -89,9 +87,9 @@ html{
   }
 
   .seven {
-    grid-column: 7 / 10;
-    grid-row: 20 / 32;
-    background-image: url(/src/images/IMG_20231111_085546_544.jpg);
+    grid-column: 13 /22;
+    grid-row: 20 / 31;
+    background-color: red;
     background-size: cover;
     border-radius: 20px;
   }
@@ -105,9 +103,9 @@ html{
   }
   
   .nine {
-    grid-column: 1 / 11;
-    grid-row: 35 / 51 ;
-    background: linear-gradient( rgba(0, 0, 0, 0.763),rgba(76, 112, 180, 0.103)), url(/src/images/keyboard-background-30vmdiqviu5f54ro.webp);
+    grid-column: 1 / 23;
+    grid-row: 32/ 51 ;
+    background-color: #7d7779;
     background-size: cover;
   }
 
@@ -246,8 +244,7 @@ html{
     white-space: nowrap;
     border-right: 4px solid;
     width: 36ch;
-
-    animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+    animation: typing 2s steps(5), blink .5s infinite step-end alternate;
     overflow: hidden;
     color: white;
   }
@@ -260,8 +257,7 @@ html{
     white-space: nowrap;
     border-right: 4px solid;
     width: 23ch;
-
-    animation: typing 2s steps(21), blink .5s infinite step-end alternate;
+    animation: typing 2s steps(20), blink .5s infinite step-end alternate;
     overflow: hidden;
     color: white;
   }
