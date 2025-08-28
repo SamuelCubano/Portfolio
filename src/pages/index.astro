@@ -46,7 +46,9 @@ import Icons from '../components/icons.astro';
 
       <!-- Sección de Slogan -->
       <div class="three">
-        <h2 class="slogan"><i>"Ofrecemos un ambiente cómodo, seguro y equipado con tecnología avanzada para brindarle una experiencia médica eficiente y de calidad."</i></h2>
+        <a class="boton-links" href="/public/CV Samuel Cubano.pdf" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a class="boton-links" href="/public/CV Samuel Cubano.pdf" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a class="boton-links" href="/public/CV Samuel Cubano.pdf" target="_blank"><i class="fa-solid fa-envelope"></i> Write me </a>
       </div>
 
       <!-- Sección de Información de la Compañía -->
@@ -485,8 +487,15 @@ import Icons from '../components/icons.astro';
       .three {
         grid-column: 1 / 22;
         grid-row: 13 / 15;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
         text-align: center ;
+      }
+
+      .three a{
+        margin-top: 20px;
+        font-size: 22px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-family: "Roboto", serif;
       }
 
       .four {
