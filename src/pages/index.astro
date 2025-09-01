@@ -192,23 +192,23 @@ import Icons from '../components/icons.astro';
       <!-- Sección de Información de la Compañía -->
       <div class="twenty-eight">
         <div class="form-container">
-            <form id="contactForm">
+            <form id="contactForm" action="https://formsubmit.co/samcubdev@gmail.com" method="POST">
                 <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
                 </div>
                 
                 <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" required placeholder="Tell me about your future project...."></textarea>
                 </div>
                 
-                <button type="submit">Enviar mensaje</button>
+                <button class="btn-form" type="submit">Submit message</button>
             </form>
             
             <div class="success-message" id="successMessage">
@@ -226,7 +226,7 @@ import Icons from '../components/icons.astro';
 
       <!-- Sección de Footer, Contacto y Enlaces rapidos -->
       <div class="thirty" id="thirty">
-        <p>© 2025 SamCub - Todos los derechos reservados.</p>     
+        <p>© 2025 SamCub - Todos los derechos reservados. <br>My mail for contact: samcubdev@gmail.com</p>   
       </div>
     </div>
 
@@ -288,6 +288,27 @@ import Icons from '../components/icons.astro';
         -webkit-box-shadow: 0px 6px 5px 0px rgba(135, 207, 235, 0.253);
       }
 
+      .btn-form {
+        background-color: #202020;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin-top: 10px ;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: background 0.5s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      .btn-form:hover {
+    background-color: skyblue;
+    color: #202020;
+    transform: scale(1.05); /* Efecto de ligera expansión */
+}
+
       .sd {
         font-family: "Tektur", serif;
         text-align: center;
@@ -296,6 +317,8 @@ import Icons from '../components/icons.astro';
         background: black;
         padding-bottom: 10px;
         padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
 
       .info {
@@ -826,7 +849,7 @@ import Icons from '../components/icons.astro';
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
-            color: #333;
+            color: white;
         }
 
          input, textarea {
@@ -868,12 +891,10 @@ import Icons from '../components/icons.astro';
         grid-column: 6 / 17;
         grid-row: 76;
         text-align: center;
-        background-color: #e5e5e5;
+        background-color: rgba(135, 207, 235, 0.418);
         border-radius: 15px;
-      }
-
-      .twenty-eight button:hover{
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        border: solid 2px skyblue;
+        box-shadow: 0px 0px 12px 0px skyblue;
       }
 
       .thirty {
@@ -881,7 +902,7 @@ import Icons from '../components/icons.astro';
         grid-row: 78;
         color: white;
         border-top: solid 1px skyblue;
-        box-shadow: 0px -6px 5px 0px rgba(135, 207, 235, 0.521);
+        box-shadow: 0px 6px 5px 5px rgba(135, 207, 235, 0.521);
         background-color: #101010;
         padding: 10px 30px;
       }
@@ -939,7 +960,7 @@ import Icons from '../components/icons.astro';
         cursor: pointer;
     }
 
-    @media (max-width: 600px) { 
+    @media (max-width: 700px) { 
 
         .menu-toggle {
             display: block;
@@ -1237,7 +1258,7 @@ import Icons from '../components/icons.astro';
     .wrapper {
       grid-template-columns: repeat(10, 1fr);
     }
-
+  }
 
   /*  RESPONSIVE 415px   */
 
@@ -1283,6 +1304,7 @@ import Icons from '../components/icons.astro';
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
+            alert("Ya se envio su mensaje, gracias por contactarme");
             // Aquí normalmente se enviarían los datos a un servidor
             // Por ahora solo mostraremos el mensaje de éxito
             
